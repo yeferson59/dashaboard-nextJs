@@ -44,11 +44,11 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           </div>
           <div id="customer-error" aria-live="polite" aria-atomic="true">
             {state.errors?.customerId &&
-            state.errors.customerId.map((error: string) => (
-              <p className="mt-2 text-sm text-red-500" key={error}>
-                {error}
-              </p>
-            ))}
+              state.errors.customerId.map((error: string) => (
+                <p className="mt-2 text-sm text-red-500" key={error}>
+                  {error}
+                </p>
+              ))}
           </div>
         </div>
 
@@ -74,11 +74,11 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           </div>
           <div id="amount-error" aria-live="polite" aria-atomic="true">
             {state.errors?.amount &&
-            state.errors?.amount.map((error: string) => (
-              <p className="mt-2 text-sm text-red-500" key={error}>
-                {error}
-              </p>
-            ))}
+              state.errors?.amount.map((error: string) => (
+                <p className="mt-2 text-sm text-red-500" key={error}>
+                  {error}
+                </p>
+              ))}
           </div>
         </div>
 
@@ -125,12 +125,12 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           </div>
           <div id="paid-error" aria-live="polite" aria-atomic="true">
             {state.errors?.status &&
-            state.errors.status.map((error: string) => (
-              <p className="mt-2 text-sm text-red-500" key={error}>
-                {error}
-              </p>
-            ))}
-        </div>
+              state.errors.status.map((error: string) => (
+                <p className="mt-2 text-sm text-red-500" key={error}>
+                  {error}
+                </p>
+              ))}
+          </div>
         </fieldset>
       </div>
       <div className="mt-6 flex justify-end gap-4">
